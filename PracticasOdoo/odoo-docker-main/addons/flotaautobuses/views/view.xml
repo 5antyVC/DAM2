@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <!-- Vista de Lista-->
+        <record id="view_conductor_tree" model="ir.ui.view">
+            <field name = "name">flotaautobuses.conductor.tree</field>
+            <field name = "model">flotaautobuses.conductor</field>
+            <field name = "arch" type="xml">
+                <sheet>
+                    <tree>
+                        <field name="DNI_Pasaporte"></field>
+                        <field name="Licencia_Conduccion"></field>
+                        <field name="Vehiculos"></field>
+                        <field name="Viajes"></field>
+                    </tree>
+                </sheet>
+            </field>
+        </record>
+
+        <record id="view_vehiculo_tree" model="ir.ui.view">
+            <field name = "name">flotaautobuses.vehiculo.tree</field>
+            <field name = "model">flotaautobuses.vehiculo</field>
+            <field name = "arch" type="xml">
+                <sheet>
+                    <tree>
+                        <field name="Capaidad"></field>
+                        <field name="Matricula"></field>
+                        <field name="Conductor"></field>
+                    </tree>
+                </sheet>
+            </field>
+        </record>
+
+        <record id="view_viaje_tree" model="ir.ui.view">
+            <field name = "name">flotaautobuses.viaje.tree</field>
+            <field name = "model">flotaautobuses.viaje</field>
+            <field name = "arch" type="xml">
+                <sheet>
+                    <tree>
+                        <field name="Origen"></field>
+                        <field name="Destino"></field>
+                        <field name="Vehiculo"></field>
+                        <field name="Fecha"></field>
+                        <field name="Viajeros"></field>
+                        <field name="Precio"></field>
+                    </tree>
+                </sheet>
+            </field>
+        </record>
+
+        <record id="view_viajero_tree" model="ir.ui.view">
+            <field name = "name">flotaautobuses.viajero.tree</field>
+            <field name = "model">flotaautobuses.viajero</field>
+            <field name = "arch" type="xml">
+                <sheet>
+                    <tree>
+                        <field name="Nombre"></field>
+                        <field name="Apellido"></field>
+                        <field name="VehDNI_Pasaporteiculo"></field>
+                        <field name="Viajes"></field>
+                    </tree>
+                </sheet>
+            </field>
+        </record>
+
+        <!-- Fin Vista de Lista-->
+
+        <!-- Vista de Formulario-->
+        <record id="view_conductor_form" model="ir.ui.view">
+            <field name = "name">flotaautobuses.conductor.form</field>
+            <field name = "model">flotaautobuses.conductor</field>
+            <field name = "arch" type="xml">
+                <sheet>
+                    <form>
+                        <group>
+                            <field name="DNI_Pasaporte"></field>
+                            <field name="Licencia_Conduccion"></field>
+                            <field name="Vehiculos"></field>
+                            <field name="Viajes"></field>
+                        </group>
+                    </form>
+                </sheet>
+            </field>
+        </record>
+
+        <record id="view_vehiculo_form" model="ir.ui.view">
+            <field name = "name">flotaautobuses.vehiculo.form</field>
+            <field name = "model">flotaautobuses.vehiculo</field>
+            <field name = "arch" type="xml">
+                <sheet>
+                    <form>
+                        <group>
+                            <field name="Capaidad"></field>
+                            <field name="Matricula"></field>
+                            <field name="Conductor"></field>
+                        </group>
+                    </form>
+                </sheet>
+            </field>
+        </record>
+
+        <record id="view_viaje_form" model="ir.ui.view">
+            <field name = "name">flotaautobuses.viaje.form</field>
+            <field name = "model">flotaautobuses.viaje</field>
+            <field name = "arch" type="xml">
+                <sheet>
+                    <form>
+                        <group>
+                            <field name="Origen"></field>
+                            <field name="Destino"></field>
+                            <field name="Vehiculo"></field>
+                            <field name="Fecha"></field>
+                            <field name="Viajeros"></field>
+                            <field name="Precio"></field>
+                        </group>
+                    </form>
+                </sheet>
+            </field>
+        </record>
+
+        <record id="view_viajero_form" model="ir.ui.view">
+            <field name = "name">flotaautobuses.viajero.form</field>
+            <field name = "model">flotaautobuses.viajero</field>
+            <field name = "arch" type="xml">
+                <sheet>
+                    <form>
+                        <group>
+                            <field name="Nombre"></field>
+                            <field name="Apellido"></field>
+                            <field name="VehDNI_Pasaporteiculo"></field>
+                            <field name="Viajes"></field>
+                        </group>
+                    </form>
+                </sheet>
+            </field>
+        </record>
+
+        <!-- Fin Vista de Formulario-->
+
+        <!-- Acciones-->
+        <record id="action_conductor" model="ir.actions.act_window">
+            <field name="name">Conductor</field>
+            <field name="res_model">flotaautobuses.conductor</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref= "view_conductor_tree"></field>
+        </record>
+
+        <record id="action_vehiculo" model="ir.actions.act_window">
+            <field name="name">Vehiculo</field>
+            <field name="res_model">flotaautobuses.vehiculo</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref= "view_vehiculo_tree"></field>
+        </record>
+
+        <record id="action_viaje" model="ir.actions.act_window">
+            <field name="name">Viaje</field>
+            <field name="res_model">flotaautobuses.viaje</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref= "view_viaje_tree"></field>
+        </record>
+
+        <record id="action_viajero" model="ir.actions.act_window">
+            <field name="name">Viajero</field>
+            <field name="res_model">flotaautobuses.viajero</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref= "view_viajero_tree"></field>
+        </record>
+
+        <!-- Fin Acciones-->
+
+        <!-- Menu-->
+        <menuitem id="model_conductor" name="Conductor"  sequence="10"/>
+        <menuitem id="model_conductor2" name="Conductor2" parent="model_conductor" action="action_conductor"/>
+
+        <menuitem id="model_vehiculo" name="Vehiculo"  sequence="10"/>
+        <menuitem id="model_vehiculo2" name="Vehiculo2" parent="model_vehiculo" action="action_vehiculo"/>
+
+        <menuitem id="model_viaje" name="Viaje"  sequence="10"/>
+        <menuitem id="model_viaje2" name="Viaje2" parent="model_viaje" action="action_viaje"/>
+
+        <menuitem id="model_viajero" name="Viajero"  sequence="10"/>
+        <menuitem id="model_viajero2" name="Viajero2" parent="model_viajero" action="action_viajero"/>
+
+            <!-- Fin Menu-->
+
+    </data>
+    
+</odoo>
+
