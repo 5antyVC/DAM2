@@ -1,0 +1,2 @@
+Error: Could not find or load main class C:\Users\Hp\Desktop\Practicas PSP\Directorio\Sumador.java
+Caused by: java.lang.ClassNotFoundException: C:\Users\Hp\Desktop\Practicas PSP\Directorio\Sumador.java

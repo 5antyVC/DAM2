@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(80, 95, 75);
+}
+
+
+
+.container {
+    display: flex;
+    gap: 10%;
+
+}
+
+.texto {
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+}
+
+.banner_texto {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.banner {
+    margin: 0;
+    padding-top: 20px;
+    background-color: black;
+
+}
+
+.cajaGrande {
+    margin-top: 1%;
+    display: flex;
+    gap: 1%;
+}
+
+.caja1 {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(210, 213, 213);
+    margin: 1%;
+}
+
+.caja2 {
+    text-align: center;
+    padding: 15px;
+    margin: 1%;
+
+    background-color: rgb(210, 213, 213);
+}
+
+.caja3 {
+    text-align: center;
+    padding: 15px;
+    margin: 1%;
+
+    background-color: rgb(210, 213, 213);
+}
+
+.boton_ver_mas {
+    margin-top: 15px;
+    padding: 1%;
+    background-color: rgb(80, 95, 75);
+    color: white;
+}
+
+.titulo {
+    padding-bottom: 1%;
+}
+
+.subtitulo {
+    padding-bottom: 1%;
+}

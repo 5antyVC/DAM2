@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.Logo {
+    width: auto;
+    height: 100px;
+}
+
+.Cabecera {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 80%;
+}
+
+.Container_Cabecera {
+    display: flex;
+    justify-content: space-between;
+    gap: 7rem;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #774520;
+    padding-top: 5px;
+}
+
+.Redes {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding-top: 5px;
+
+}
+
+.Instagram
+{
+    width: auto;
+    height: 45px;
+}
+.Facebook{
+    width: auto;
+    height: 40px;
+}
+.Barra {
+    background-color: #774520;
+    font-size: 1%;
+
+}
+
+.Banner {
+    background-image: url(/img/Cafeteria.png); 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5%;
+}
+
+.Titulo_Banner {
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 1%;
+    margin: 1%;
+    font-size: 70px;
+    background-color: rgb(119, 69, 32, 0.8);
+    width: fit-content;
+
+
+}
+
+.Boton {
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 1%;
+    margin: 1%;
+    text-transform: uppercase;
+    font-size: 30px;
+    background-color: #3e4e78;
+    width: fit-content;
+}

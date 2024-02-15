@@ -1,0 +1,80 @@
+:root {
+    --colorPrincipal: #0C5184;
+    --colorPrimario: #3179AA;
+    --colorSecundario: #5B7C8E;
+    --colorTerciario: #FFC543;
+    --colorCuaternario: #D68984;
+    --colorQuintario: #930E1C;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ContenedorTotal {
+    margin: 15%;
+    color: white;
+}
+.ContenedorArriba {
+    background-color: var(--colorPrincipal);
+    padding: 1%;
+}
+.ContenedorStrategy {
+    padding: 5%;
+    text-align: center;
+    background-color: var(--colorPrincipal);
+    border: 2px solid #ffffff;
+
+}
+
+.ContenedorAbajo {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+
+
+}
+
+.Contenedor1 {
+    text-align: center;
+    background-color: var(--colorPrimario);
+    padding: 5%;
+}
+
+.Contenedor2 {
+    text-align: center;
+    background-color: var(--colorSecundario);
+    padding: 5%;
+}
+
+.Contenedor3 {
+    text-align: center;
+    background-color: var(--colorTerciario);
+    padding: 5%;
+}
+
+.Contenedor4 {
+    text-align: center;
+    background-color: var(--colorCuaternario);
+    padding: 5%;
+}
+
+.Contenedor5 {
+    text-align: center;
+    background-color: var(--colorQuintario);
+    padding: 5%;
+}
+.TituloStrategy{
+    padding-top: 1%;
+    margin-bottom: 1%;
+}
+.Titulo{
+    padding-bottom: 20%;
+}
+.Texto{
+    margin-top: 2%;
+}
+

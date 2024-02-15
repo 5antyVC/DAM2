@@ -1,0 +1,56 @@
+:root {
+    --colorPrincipal: #0C5184;
+    --colorIzquierda: #3179AA;
+    --colorDerecha: #FFC543;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ContenedorTotal {
+    margin: 15%;
+    color: white;
+    font-size: 20px;
+}
+
+.ContenedorArriba {
+    background-color: var(--colorPrincipal);
+    padding: 1%;
+}
+
+.ContenedorStrategy {
+    text-align: center;
+    background-color: var(--colorPrincipal);
+    border: 2px solid #ffffff;
+
+}
+
+.ContenedorAbajo {
+    display: flex;
+    align-items: center;
+
+}
+
+.ContenedorIzquierda {
+    text-align: center;
+    background-color: var(--colorIzquierda);
+    padding: 5%;
+}
+
+.ContenedorDerecha {
+    text-align: center;
+    background-color: var(--colorDerecha);
+    padding: 5%;
+
+}
+
+h3 {
+    margin-top: 5%;
+}
+
+.Texto {
+    padding: 5%;
+}

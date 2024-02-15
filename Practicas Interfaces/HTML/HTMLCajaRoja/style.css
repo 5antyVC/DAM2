@@ -1,0 +1,72 @@
+:root {
+    --colorPrimario: #B81123;
+    --colorSecudario: #e98989;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.CajaRoja {
+    display: flex;
+    background-color: var(--colorPrimario);
+    justify-content: space-between;
+}
+
+.Columna1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Columna2 {
+    margin-left: 0;
+}
+
+.Titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #DCBC66;
+    font-weight: bold;
+    font-size: 100px;
+
+}
+
+.Texto {
+    margin: 5%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.Imagen {
+    width: 80%;
+
+}
+
+.Contenedor {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+
+
+}
+
+.CajaClara {
+    background-color: var(--colorSecudario);
+    padding: 7%;
+
+}
+
+.ContenedorClaro {
+    color: white;
+    font-size: 50px;
+}

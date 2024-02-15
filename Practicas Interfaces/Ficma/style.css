@@ -1,0 +1,65 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+    margin: 0;
+    padding: 0;
+
+}
+
+.padre {
+    display: flex;
+    background-color: #FFF2E1;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.menu__item {
+
+    font-size: 22px;
+    color: grey;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.banner1 {
+    display: flex;
+    background-color: #FFF2E1;
+    justify-content: space-between;
+
+}
+
+.banner1__columna1 {
+    margin-left: 30px;
+}
+
+.banner1__columna2 {
+}
+
+.Studying {
+    font-size: 50px;
+    color: #F48C06;
+
+}
+
+.Online {
+    font-size: 50px;
+
+    color: #2F327D;
+}
+p{
+    font: 100;
+}
+.titulo{
+    display: flex;
+    gap: 20px;
+
+}
